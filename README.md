@@ -1,9 +1,8 @@
-```markdown
-# 📂 Automated File Organizer CLI
+#  Automated File Organizer CLI
 
 A simple, fast, and customizable Command Line Interface (CLI) tool designed to automatically sort and organize files within a specified directory (like your Downloads folder) based on their file type.
 
-## ✨ Features
+##  Features
 
 * **Customizable Mappings (JSON):** Easily define which file extensions go into which folders by editing the `config.json` file.
 * **Dry-Run Mode:** Preview the organization changes before moving any files, ensuring safety and confidence in the operation.
@@ -11,7 +10,7 @@ A simple, fast, and customizable Command Line Interface (CLI) tool designed to a
 * **Standard Library Focus:** Relies heavily on Python's built-in libraries (`pathlib`, `shutil`) for robust and portable file operations.
 * **'Other' Folder Handling:** Automatically moves files with unknown extensions into an `Other` folder, preventing clutter.
 
-## 🚀 Setup and Installation
+##  Setup and Installation
 
 ### Prerequisites
 
@@ -37,7 +36,7 @@ You need **Python 3.6+** installed on your system.
     pip install -r requirements.txt
     ```
 
-## ⚙️ Configuration (`config.json`)
+##  Configuration (`config.json`)
 
 The default organization rules are stored in the `config.json` file. You can easily modify this file to customize your organization structure.
 
@@ -54,7 +53,7 @@ The structure is **`"FolderName": [".ext1", ".ext2", ...]`**.
 
 **Note:** Files with extensions not listed in the map will be moved to a folder named `Other`.
 
-## 💻 Usage
+##  Usage
 
 The main script is `organize.py`. Use the command `python organize.py [OPTIONS] [TARGET_PATH]`
 
@@ -71,7 +70,7 @@ python organize.py
 Provide the path to the folder you wish to clean up.
 
 ```bash
-python organize.py /Users/yourname/Desktop/MessyFolder
+python organize.py /Users/Desktop/MessyFolder
 ```
 
 ### Dry-Run Mode (Safe Preview)
@@ -98,7 +97,7 @@ To view all available commands and options:
 python organize.py --help
 ```
 
-## 🛠️ Project Structure
+##  Project Structure
 
 ```
 automated-file-organizer/
@@ -107,4 +106,3 @@ automated-file-organizer/
 ├── requirements.txt
 ├── config.json         # User-customizable mapping rules
 └── organize.py         # The main CLI application logic
-```

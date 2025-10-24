@@ -1,0 +1,13 @@
+# .gitignore
+
+# Byte-compiled Python files
+__pycache__/
+*.pyc
+
+# Virtual environment directory
+venv/
+.venv/
+
+Documents/
+
+demo.py
